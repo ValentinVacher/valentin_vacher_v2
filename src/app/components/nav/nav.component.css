@@ -10,3 +10,44 @@
 .border-left-brown{
   border-left:1px solid #513234;
 }
+.text-yellow{
+   color:#f9b233;
+}
+.upscale:hover{
+  transform:scale(1.15);
+  transition: .2s ease-out;
+}
+.upscale:active{
+  transform: scale(1);
+}
+.nav-element{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+  z-index: 0;
+}
+.nav-element::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f9b233;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.nav-element:hover::before {
+  transform: scaleX(1);
+}
+.nav-element:active a{
+  transition: .2s linear;
+  font-size: 20px;
+  color: #210002;
+  transform: scale(.9) ;
+}

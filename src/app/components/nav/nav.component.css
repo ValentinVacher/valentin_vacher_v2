@@ -28,6 +28,7 @@
   overflow: hidden;
   transition: background-color 0.5s ease-in-out;
   z-index: 0;
+  font-family: Rajdhani-Bold, serif;
 }
 .nav-element::before {
   content: "";

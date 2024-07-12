@@ -1,21 +1,47 @@
 <nav class="navbar navbar-expand-lg bg-brown p-0">
-  <div class="container-fluid text-center p-0 ">
-    <div class="collapse navbar-collapse p-0 m-0 " id="navbarNavDropdown">
+  <div class="container-fluid text-center p-0 m-0 row">
+    <div class="nav-item m-0 col-2 h-80px d-flex align-items-center" [class.border-right-brown]="navDisplay">
+      <a class="navbar-brand m-auto" href="#"><img ngSrc="assets/images/logo.png" class="upscale" alt="logo.png"
+                                                   width="65" height="65"></a>
+    </div>
+
+    <div class="d-flex justify-content-center px-5 col-2" *ngIf="!navDisplay">
+      <fa-icon [icon]="faBars" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+               size="3x" class="text-yellow"></fa-icon>
+    </div>
+
+    <ul class="navbar-nav row m-0 p-0 w-100 col-10" *ngIf="navDisplay && isCollapsed">
+      <li class="nav-item col-3 border-right-brown border-left-brown nav-element h-80px">
+        <a class="nav-link text-orange fw-bold fs-3  " aria-current="page" href="#">CV EN PDF</a>
+      </li>
+      <li class="nav-item col-3 border-right-brown border-left-brown nav-element">
+        <a class="nav-link text-orange fw-bold fs-3" href="#">PORTFOLIO</a>
+      </li>
+      <li class="nav-item col-3 border-right-brown border-left-brown nav-element">
+        <a class="nav-link text-orange fw-bold fs-3" href="#">BOMBERMAN</a>
+      </li>
+      <li class="nav-item border-left-brown my-auto py-2 col-1">
+        <a class="navbar-brand m-0" href="#">
+          <fa-icon [icon]="faGitHub" class="text-yellow upscale d-block" size="3x"></fa-icon>
+        </a>
+      </li>
+    </ul>
+
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="col-12 p-0">
       <ul class="navbar-nav row m-0 p-0 w-100">
-        <li class="nav-item col-1 border-right-brown my-auto py-1">
-          <a class="navbar-brand m-0" href="#"><img ngSrc="assets/images/logo.png" class="upscale" alt="logo.png" width="50" height="50"></a>
-        </li>
-        <li class="nav-item col border-right-brown border-left-brown nav-element">
+        <li class="nav-item nav-element">
           <a class="nav-link text-orange fw-bold fs-3  " aria-current="page" href="#">CV EN PDF</a>
         </li>
-        <li class="nav-item col border-right-brown border-left-brown nav-element">
+        <li class="nav-item nav-element">
           <a class="nav-link text-orange fw-bold fs-3" href="#">PORTFOLIO</a>
         </li>
-        <li class="nav-item col border-right-brown border-left-brown nav-element">
+        <li class="nav-item nav-element">
           <a class="nav-link text-orange fw-bold fs-3" href="#">BOMBERMAN</a>
         </li>
-        <li class="nav-item col-1 border-left-brown my-auto py-2 ">
-          <a class="navbar-brand m-0" href="#"><fa-icon [icon]="faGitHub" class="fa-xl text-yellow upscale d-block" size="xl"></fa-icon></a>
+        <li class="nav-item py-3  w-100">
+          <a class="navbar-brand m-0" href="#">
+            <fa-icon [icon]="faGitHub" class="text-yellow upscale d-block" size="3x"></fa-icon>
+          </a>
         </li>
       </ul>
     </div>

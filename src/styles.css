@@ -2,3 +2,7 @@
   font-family: Rajdhani-Bold;
   src: url("assets/fonts/Rajdhani-Bold.ttf");
 }
+@font-face {
+  font-family: Zelda;
+  src: url("assets/fonts/zelda.otf");
+}

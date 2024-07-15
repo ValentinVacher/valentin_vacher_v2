@@ -6,3 +6,8 @@
   font-family: Zelda;
   src: url("assets/fonts/zelda.otf");
 }
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #FEDCC8;
+}

@@ -59,3 +59,6 @@
   font-family: Zelda, serif;
   letter-spacing: 3px;
 }
+nav{
+  z-index: 3;
+}

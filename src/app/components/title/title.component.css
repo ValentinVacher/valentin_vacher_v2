@@ -1,0 +1,10 @@
+.line{
+  height: 2px;
+  background-color: #210002;
+  width: 25%;
+  margin: 15px auto;
+  border-radius: 1px;
+}
+h1,h2{
+  font-size: 50px;
+}

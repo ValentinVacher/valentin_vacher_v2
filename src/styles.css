@@ -3,8 +3,18 @@
   src: url("assets/fonts/Rajdhani-Bold.ttf");
 }
 @font-face {
+  font-family: Rajdhani-Light;
+  src: url("assets/fonts/Rajdhani-Light.ttf");
+}
+@font-face {
   font-family: Zelda;
   src: url("assets/fonts/zelda.otf");
+}
+.rajdhani-bold{
+  font-family: Rajdhani-Bold, serif, serif;
+}
+.rajdhani-light{
+  font-family: Rajdhani-Light, serif, serif;
 }
 body{
   overflow-x: hidden;

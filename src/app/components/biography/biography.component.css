@@ -1,0 +1,9 @@
+li{
+  list-style: none;
+}
+.text-beige{
+  color:#fedcc8;
+}
+.border-beige{
+  border:1px solid #fedcc8;
+}

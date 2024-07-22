@@ -4,6 +4,15 @@ li{
 .text-beige{
   color:#fedcc8;
 }
-.border-beige{
-  border:1px solid #fedcc8;
+.h-225px{
+  height:225px;
+}
+.bg-beige{
+  background-color:#fedcc8;
+}
+.text-brown {
+  color:#2d112b;
+}
+.shadow-inset{
+  box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.75);
 }

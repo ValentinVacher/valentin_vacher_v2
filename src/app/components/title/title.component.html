@@ -1,5 +1,5 @@
-<div class="container text-center pt-5">
-  <h1 class="rajdhani-light" >VALENTIN VACHER</h1>
-  <div class="line"></div>
-  <h2 class="rajdhani-bold">DÉVELOPPEUR</h2>
+<div class="container text-center" [class.pt-5]="!smaller" [class.pt-4]="smaller" [class.mt-5]="highter">
+  <h1 class="rajdhani-light m-0" [class.fs-1]="smaller">VALENTIN VACHER</h1>
+  <div class="line" [class.my-1]="smaller"></div>
+  <h2 class="rajdhani-bold" [class.fs-2]="smaller">DÉVELOPPEUR</h2>
 </div>
